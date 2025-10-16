@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soc Med Profile Output</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styling for header */
+        .header {
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Header: Similar to the form -->
+        <h2 class="header">Soc Med Profile</h2>
+        
+        <!-- Display the profile details -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your Profile Details</h5>
+                <p><strong>First Name:</strong> {{ first_name }}</p>
+                <p><strong>Last Name:</strong> {{ last_name }}</p>
+                <p><strong>Sex:</strong> {{ sex }}</p>
+                <p><strong>Status:</strong> {{ status }}</p>
+                <p><strong>Location:</strong> {{ location }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
